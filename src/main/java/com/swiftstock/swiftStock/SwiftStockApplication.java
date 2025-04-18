@@ -1,13 +1,13 @@
-package com.swiftstock.swiftstock;
+package com.swiftstock.swiftStock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SwiftstockApplication {
+public class SwiftStockApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SwiftstockApplication.class, args);
+		SpringApplication.run(SwiftStockApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.swiftstock.swiftstock;
+package com.swiftstock.swiftStock;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SwiftstockApplication.class);
+		return application.sources(SwiftStockApplication.class);
 	}
 
 }
