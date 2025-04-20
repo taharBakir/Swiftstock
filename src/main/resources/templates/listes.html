@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thmeleaf.org">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Swift-Stock - Listes de produits existantes</title>
+		<link th:href="@{/bootstrap-5.3.5-dist/css/bootstrap.css}" rel="stylesheet" >
+	</head>
+	
+	<body>
+		<header>
+		</header>
+		<section>
+			<div class="container my-4">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Listes</li>
+					</ol>
+				</nav>
+			</div>
+	
+			<div class="px-3 py-3 my-3 text-center">
+				<h1 class="display-4 fw-bold text-body-emphasis">Listes de produits existantes</h1>
+				<div class="col-lg-6 mx-auto">
+					<p class="lead mb-2">Choisir une listes existantes afin de pouvoir la consulter, modifier ou supprimer</p>
+				</div>
+			</div>
+	
+			<div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-2 align-items-center justify-content-center">
+				<div class="list-group">
+					<a href="/getDetailUneListe?listeId=16-04-2025" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+						<svg class="bi text-success flex-shrink-0 " width="32" height="32" fill="currentColor">
+							<use th:href="@{/images/bootstrap-icons-1.11.3/bootstrap-icons.svg#list-check}"></use>
+						</svg>
+						<div class="d-flex gap-2 w-100 justify-content-between">
+							<div>
+								<h6 class="mb-0">Liste du 16/04/2025</h6>
+								<p class="mb-0 opacity-75">165 produits</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+						<svg class="bi text-success flex-shrink-0 " width="32" height="32" fill="currentColor">
+							<use th:href="@{/images/bootstrap-icons-1.11.3/bootstrap-icons.svg#list-check}"></use>
+						</svg>
+						<div class="d-flex gap-2 w-100 justify-content-between">
+							<div>
+								<h6 class="mb-0">Liste du 02/04/2025</h6>
+								<p class="mb-0 opacity-75">139 produits</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+						<svg class="bi text-success flex-shrink-0 " width="32" height="32" fill="currentColor">
+							<use th:href="@{/images/bootstrap-icons-1.11.3/bootstrap-icons.svg#list-check}"></use>
+						</svg>
+						<div class="d-flex gap-2 w-100 justify-content-between">
+							<div>
+								<h6 class="mb-0">Liste du 26/03/2025</h6>
+								<p class="mb-0 opacity-75">178 produits</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+						<svg class="bi text-success flex-shrink-0 " width="32" height="32" fill="currentColor">
+							<use th:href="@{/images/bootstrap-icons-1.11.3/bootstrap-icons.svg#list-check}"></use>
+						</svg>
+						<div class="d-flex gap-2 w-100 justify-content-between">
+							<div>
+								<h6 class="mb-0">Liste du 19/03/2025</h6>
+								<p class="mb-0 opacity-75">159 produits</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+						<svg class="bi text-success flex-shrink-0 " width="32" height="32" fill="currentColor">
+							<use th:href="@{/images/bootstrap-icons-1.11.3/bootstrap-icons.svg#list-check}"></use>
+						</svg>
+						<div class="d-flex gap-2 w-100 justify-content-between">
+							<div>
+								<h6 class="mb-0">Liste du 12/03/2025</h6>
+								<p class="mb-0 opacity-75">138 produits</p>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+						<svg class="bi text-success flex-shrink-0 " width="32" height="32" fill="currentColor">
+							<use th:href="@{/images/bootstrap-icons-1.11.3/bootstrap-icons.svg#list-check}"></use>
+						</svg>
+						<div class="d-flex gap-2 w-100 justify-content-between">
+							<div>
+								<h6 class="mb-0">Liste du 05/03/2025</h6>
+								<p class="mb-0 opacity-75">122 produits</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+		</footer>
+		
+		
+	</body>
+</html>
