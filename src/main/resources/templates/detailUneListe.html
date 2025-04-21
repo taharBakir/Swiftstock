@@ -12,10 +12,128 @@
 		</header>
 		
 		<section>
-			<h1 class="display-4 fw-normal text-body-emphasis" th:text="|Liste du ${listeId} ya cunty|"/>
+			<div class="container my-4">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+						<li class="breadcrumb-item"><a href="/getListes">Listes</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Detail liste</li>
+					</ol>
+				</nav>
+			</div>
+			
+			<div class="container my-4">	
+				<div class="px-3 py-3 my-3 text-center">
+					<h1 class="display-4 fw-bold text-body-emphasis" th:text="|Details liste du ${listeId}|" />
+					<div class="col-lg-6 mx-auto">
+						<p class="lead mb-4">Deux actions général s'applique à la liste entiére:</p>
+						<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+							<button type="button" class="btn btn-success btn-lg px-4 gap-3">EXPORTER</button>
+							<button type="button" class="btn btn-danger btn-lg px-4">SUPPRIMER</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container my-2 px-3 ">
+				<div class="table-responsive small ">
+					<table class="table table-striped table-sm table-bordered align-middle">
+						<thead class="table-dark">
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Barcode</th>
+								<th scope="col">Intitule</th>
+								<th scope="col">PA</th>
+								<th scope="col">PV</th>
+								<th class="text-center" scope="col">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1,001</td>
+								<td>random</td>
+								<td>data</td>
+								<td>placeholder</td>
+								<td>text</td>
+								<td class="text-center">
+									<a href="#link" class="btn btn-danger py-1 my-1" role="button">Supprimer</a>
+									<a href="#link" class="btn btn-primary py-1 my-1" role="button">Modifier</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1,002</td>
+								<td>placeholder</td>
+								<td>irrelevant</td>
+								<td>visual</td>
+								<td>layout</td>
+								<td class="text-center">
+									<a href="#link" class="btn btn-danger py-1 my-1" role="button">Supprimer</a>
+									<a href="#link" class="btn btn-primary py-1 my-1" role="button">Modifier</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1,003</td>
+								<td>data</td>
+								<td>rich</td>
+								<td>dashboard</td>
+								<td>tabular</td>
+								<td class="text-center">
+									<a href="#link" class="btn btn-danger py-1 my-1" role="button">Supprimer</a>
+									<a href="#link" class="btn btn-primary py-1 my-1" role="button">Modifier</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1,003</td>
+								<td>information</td>
+								<td>placeholder</td>
+								<td>illustrative</td>
+								<td>data</td>
+								<td class="text-center">
+									<a href="#link" class="btn btn-danger py-1 my-1" role="button">Supprimer</a>
+									<a href="#link" class="btn btn-primary py-1 my-1" role="button">Modifier</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1,004</td>
+								<td>text</td>
+								<td>random</td>
+								<td>layout</td>
+								<td>dashboard</td>
+								<td class="text-center">
+									<a href="#link" class="btn btn-danger py-1 my-1" role="button">Supprimer</a>
+									<a href="#link" class="btn btn-primary py-1 my-1" role="button">Modifier</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1,005</td>
+								<td>dashboard</td>
+								<td>irrelevant</td>
+								<td>text</td>
+								<td>placeholder</td>
+								<td class="text-center">
+									<a href="#link" class="btn btn-danger py-1 my-1" role="button">Supprimer</a>
+									<a href="#link" class="btn btn-primary py-1 my-1" role="button">Modifier</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+      
+      
 		</section>
 		
 		<footer>
 		</footer>
 </body>
 </html>
+
+
+
+
+
+
+123
+450
+750
+855
