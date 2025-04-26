@@ -21,9 +21,22 @@ public class HomeController {
 	}
 	
 	@GetMapping("/getDetailUneListe")	
-	public String getDetailUneListe(@RequestParam(value = "listeId", defaultValue = "World") String listeId, Model model) {	
+	public String getDetailUneListe(@RequestParam(value = "listeId", defaultValue = "") String listeId, Model model) {	
 		model.addAttribute("listeId", listeId);
 		return "detailUneListe.html";
-	}	
+	}
+	
+	@GetMapping("/getAjouterProduitDansListe")	
+	public String getAjouterProduitDansListe(@RequestParam(value = "listeId", defaultValue = "") String listeId, Model model) {	
+		model.addAttribute("listeId", listeId);
+		return "formulaireProduit.html";
+	}
+	
+	
 
+	@GetMapping("/submitNouveauProduit")	
+	public String submitNouveauProduit(@RequestParam(value = "listeId", defaultValue = "") String listeId, Model model) {	
+		model.addAttribute("listeId", listeId);
+		return "detailUneListe.html";
+	}
 }

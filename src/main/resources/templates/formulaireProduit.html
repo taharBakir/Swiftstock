@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thmeleaf.org">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Swift-Stock - Details de la liste du 16/04/2025</title>
+		<link th:href="@{/bootstrap-5.3.5-dist/css/bootstrap.css}" rel="stylesheet" >
+	</head>
+	
+	<body class="bg-body-tertiary">
+		<header>
+		</header>
+		
+		<section>
+			<div class="container my-4">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb p-3 bg-body-secondary rounded-3">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+						<li class="breadcrumb-item"><a href="/getListes">Listes</a></li>
+						<li class="breadcrumb-item"><a th:href="@{/getDetailUneListe(listeId=${listeId})}">Detail liste <th:block th:text="${listeId}"></th:block></a></li>
+						<li class="breadcrumb-item active" aria-current="page">Ajouter Produit</li>
+					</ol>
+				</nav>
+			</div>
+
+			<div class="container my-4">
+				<div class="py-5 text-center">
+					<h1 class="h2">Ajouter nouveau produit à la liste <th:block th:text="${listeId}"></th:block></h1>
+					<p class="lead">Afin d'ajouter un nouveau produit veuillez remplir le formulaire suivant et/ou prendre une photo du code barre du produit</p>
+				</div>
+
+				<div class="container my-4">
+					<h4 class="mb-3">Billing address</h4>
+					<form class="needs-validation" novalidate="" action="/submitNouveauProduit">
+						<div class="col-12 my-2">
+							<label for="firstName" class="form-label">Nom produit</label>
+							<input type="text" class="form-control" id="name" placeholder="" value="" required="">
+							<div class="invalid-feedback">
+								Le nom du produit est obligatoire
+							</div>
+						</div>
+						
+						<div class="col-12 my-2">
+							<label for="lastName" class="form-label">Code Barre photo</label>
+							<input type="text" class="form-control" id="codebarrePhoto" placeholder="" value="" required="">
+						</div>
+						
+						<div class="col-12 my-2">
+							<label for="lastName" class="form-label">Code Barre (manuellement)</label>
+							<input type="file" name="image" accept="image/*" capture="environment">
+							<div class="invalid-feedback">
+								Le code barre est obligatoire
+							</div>
+						</div>
+						
+						<hr class="my-4">
+						
+						<button class="w-100 btn btn-primary btn-lg" type="submit">Valider</button>
+					</form>
+				</div>
+			</div>
+			
+		</section>
+	</body>
+</html>

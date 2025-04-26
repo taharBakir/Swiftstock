@@ -26,10 +26,10 @@
 				<div class="px-3 py-3 my-3 text-center">
 					<h1 class="display-4 fw-bold text-body-emphasis" th:text="|Details liste du ${listeId}|" />
 					<div class="col-lg-6 mx-auto">
-						<p class="lead mb-4">Deux actions général s'applique à la liste entiére:</p>
-						<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-							<button type="button" class="btn btn-success btn-lg px-4 gap-3">EXPORTER</button>
-							<button type="button" class="btn btn-danger btn-lg px-4">SUPPRIMER</button>
+						<div class="d-grid gap-2 d-sm-flex justify-content-sm-center py-3">
+							<button type="button" class="btn btn-success btn-lg px-4 gap-3">EXPORTER LA LISTE</button>
+							<button type="button" class="btn btn-danger btn-lg px-4">SUPPRIMER LA LISTE</button>
+							<a <a th:href="@{/getAjouterProduitDansListe(listeId=${listeId})}" class="btn btn-primary btn-lg px-4">AJOUTER PRODUIT</a>
 						</div>
 					</div>
 				</div>
@@ -130,10 +130,3 @@
 
 
 
-
-
-
-123
-450
-750
-855
